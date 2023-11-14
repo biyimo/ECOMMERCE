@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link  } from 'react-router-dom';
-import Marquee from "react-fast-marquee";
+import Marquee from "react-fast-marquee"; 
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
+import SpecialProduct from '../components/SpecialProduct';
 
 const Home = () => {
   return (
@@ -205,7 +206,90 @@ const Home = () => {
         </div>
       </div>
     </section>
-    <section className="marque-wrapper py-5">
+    <section className='famous-wrapper py-5 home-wrapper-2'>
+      <div className="container-xxl">
+        <div className="row">
+          <div className="col-3">
+            <div className="famous-card position-relative ">
+              <img src="images/famous.png" alt="" className='img-fluid' />
+              <div className="famous-content position-absolute">
+                <h5>Big Screen</h5>
+                <h6>Smart Watch Series 7</h6>
+                <p>From $399 0r $16.62émo. for 24 mo. </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="famous-card position-relative ">
+              <img src="images/famous-2.webp" alt="" className='img-fluid  bg-dark' />
+              <div className="famous-content position-absolute">
+                <h5 className='text-dark'>Studio Display</h5>
+                <h6 className='text-dark'>600 nits of brightness  </h6>
+                <p className='text-dark'>27-inch 5k Retina Display  </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="famous-card position-relative ">
+              <img src="images/tab.jpg" alt="" className='img-fluid  bg-dark' />
+              <div className="famous-content position-absolute">
+                <h5 className='text-dark'>Smartphones</h5>
+                <h6 className='text-dark'>Smartphone 13 Pro</h6>
+                <p className='text-dark'>Now in Green from $999.00 or $41.62/ mo. for 24 mo. Footnote*</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="famous-card position-relative ">
+              <img src="images/tab.jpg" alt="" className='img-fluid  bg-dark' />
+              <div className="famous-content position-absolute">
+                <h5 className='text-dark'>Home Speakers</h5>
+                <h6 className='text-dark'>Room-Filling Sound</h6>
+                <p className='text-dark'>From $699 or $116.58/mo. for 12 mo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="special-wrapper py-5 home-wrapper-2">
+      <div className='container-xxl pt-5'>
+        <div className="row">
+        <div className="col12">
+            <h3 className="section-heading">Special Products</h3>
+          </div>
+        </div>
+        <div className="row">
+          <SpecialProduct/>
+          <SpecialProduct/>
+          <SpecialProduct/>
+          <SpecialProduct/>   
+        </div>
+      
+      </div>
+    </section>
+    <section className="popular-wrapper py-5 home-wrapper-2">
+      <div className="container-xxl">
+        <div className="row">
+          <div className="col12">
+            <h1 className="section-heading">Our Popular Products</h1>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col--2'>
+            <div className='card'></div>
+          </div>
+          <div className='col--2'>
+            <div className='card'></div>
+          </div>
+          <ProductCard/>
+          <ProductCard/>
+          <ProductCard/>
+          <ProductCard/> 
+        </div>
+      </div>
+    </section>
+    <section className="marque-wrapper home-wrapper-2 py-5">
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
@@ -247,15 +331,29 @@ const Home = () => {
           <div className="col12">
             <h1 className="section-heading">Our Latest Blogs</h1>
           </div>
+          
+        </div>
+        <div className="row">
+          <div className="col-3">
           <BlogCard/>
+          </div>
+          <div className="col-3">
           <BlogCard/>
+          </div>
+          <div className="col-3">
           <BlogCard/>
+          </div>
+          <div className="col-3">
           <BlogCard/>
+          </div>
         </div>
       </div>
     </section>
    </>
+
+   
   );
 };
+
 
 export default Home
