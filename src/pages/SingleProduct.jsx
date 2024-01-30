@@ -9,7 +9,7 @@ import Color from '../components/Color';
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 
-const SingleProduct = () => {
+const SingleProduct = () => {   
     const props = {width: 400, height: 500, zoomwidth: 600, img: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxheXN0YXRpb24lMjA1fGVufDB8fDB8fHww"};
     const [orderedProduct, setOrderedProduct] = useState(true)
     const copyToClipboard = (text) => {
@@ -41,7 +41,7 @@ const SingleProduct = () => {
                             <div><img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxheXN0YXRpb24lMjA1fGVufDB8fDB8fHww" className='img-fluid' alt="" /></div>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-6">  
                         <div className="main-product-details">
                             <div className='border-bottom'>
                                 <h3 className='title'>
@@ -140,7 +140,7 @@ const SingleProduct = () => {
                                 </div>
                               </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -148,16 +148,16 @@ const SingleProduct = () => {
             <div className="container-xxl">
                 <div className="row">
                     <div className="col-12">
-                        <h4>Description</h4>
-                        <div className='bg-white p-3'>
                         
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Odio tenetur recusandae dolores mollitia voluptates 
-                            nulla aspernatur laboriosam laborum magnam dolore, 
-                            enim sequi ut quae natus deserunt quibusdam totam dicta. 
-                            Accusamus?
-                        </p>
+                        <div className='bg-white p-3'>
+                            <h4>Description</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odio tenetur recusandae dolores mollitia voluptates 
+                                nulla aspernatur laboriosam laborum magnam dolore, 
+                                enim sequi ut quae natus deserunt quibusdam totam dicta. 
+                                Accusamus?
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@ const SingleProduct = () => {
                         <div className="review-inner-wrapper">
                         <div className="review-head d-flex justify-content-between align-items-end">
                             <div>
-                                <h4  className='mb-2'>Customer Review</h4>
+                                <h4  className='mb-2'>Customer Reviews</h4>
                                 <div className='d-flex align-items-center gap-10'>
                                     <ReactStars
                                         count={5}

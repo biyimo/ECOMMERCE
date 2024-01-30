@@ -207,7 +207,7 @@ const Home = () => {
       </div>
     </section>
     <section className='famous-wrapper py-5 home-wrapper-2'>
-      <div className="container-xxl">
+      {/* <div className="container-xxl">
         <div className="row">
           <div className="col-3">
             <div className="famous-card position-relative ">
@@ -250,7 +250,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
     <section className="special-wrapper py-5 home-wrapper-2">
       <div className='container-xxl pt-5'>

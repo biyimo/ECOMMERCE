@@ -43,7 +43,7 @@ const SpecialProduct = () => {
                       </div>
                   </div>
                   <Link className='button'>Add to Cart</Link>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
